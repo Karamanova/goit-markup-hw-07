@@ -1,0 +1,42 @@
+.testimonials-scroll {
+    display: flex;
+}
+.testionials.item {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--contacts-list-color);
+    align-items: center;
+}
+.testimonials-item:not(:last-child) {
+    margin-right: 30px;
+}
+.block-testimonials {
+    background-color: var(--about-team-background-color);
+    display: flex;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+.testimonials-icons {
+    align-items: center;
+}
+.testimonials-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-color);
+    margin: 0 0 10px 0;
+}
+.testimonials-description {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--contacts-list-color);
+    width: 270px;
+}

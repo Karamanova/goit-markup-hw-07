@@ -1,0 +1,44 @@
+.navigation {
+    margin-left: 93px;
+}
+.navigation-list {
+    display: flex;
+    align-items: center;
+}
+.navigation-list .link-current {
+    color: var(--accent-color);
+}
+.navigation-link a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--title-color);
+    text-decoration: none;
+    display: block;
+    padding: 32px 0;
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navigation-list .navigation-link:not(:last-child) {
+    margin-right: 50px;
+}
+.navigation-list .link-current::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    position: absolute;
+    background-color: var(--accent-color);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.navigation-list a:hover,
+.navigation-list a:focus,
+.contact-detail a:hover,
+.contact-detail a:focus,
+.contacts-list a:hover,
+.contacts-list a:focus {
+    color: var(--accent-color);
+}
