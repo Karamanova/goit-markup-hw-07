@@ -1,0 +1,26 @@
+%fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+%flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%buttons {
+    cursor: pointer;
+    text-align: center;
+}
+%absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+%wrap {
+    display: flex;
+    flex-wrap: wrap;
+}

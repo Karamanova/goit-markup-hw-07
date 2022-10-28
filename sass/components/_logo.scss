@@ -1,12 +1,16 @@
-.header-logo {
+.page-header__header-logo {
+    @include font (26px, 700, 1.2, 0.03em);
     font-family: Raleway;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
     text-decoration: none;
     display: block;
     padding: 25px 0;
+}
+.header-logo {
+    @include font (26px, 700, 1.2, 0.03em);
+    font-family: Raleway;
+    text-decoration: none;
+    display: block;
+
 }
 .logo-web {
     color: var(--accent-color);
@@ -15,11 +19,8 @@
     color: var(--secondary-color);
 }
 .footer-logo {
+    @include font (26px, 700, 1.2, 0.03em);
     font-family: Raleway;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
     text-decoration: none;
 }
 

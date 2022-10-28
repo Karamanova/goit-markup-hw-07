@@ -1,32 +1,28 @@
-.project {
-    display: flex;
-    flex-wrap: wrap;
+.project-list {
+    @extend %wrap;
 }
 
-.project-list {
+.project-list__item {
     background: var(--primary-color);
     box-sizing: border-box;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.project-list:not(:nth-child(3n)) {
+&:not(:nth-child(3n)) {
     margin-right: 30px;
-}
-
-.project-list:not(:nth-last-child(-n + 3)) {
+    }
+&:not(:nth-last-child(-n + 3)) {
     margin-bottom: 30px;
 }
+}
 
-.project-item {
+.project-list__link {
     display: block;
     text-decoration: none;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.project-item:hover,
-.project-item:focus {
+&:hover,
+&:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
+                1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
 }
 
 .project-list-content {
@@ -35,15 +31,12 @@
     border: 1px solid var(--border-solid-color);
 }
 
-.project-name {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
+.project-content__name {
+    @include font (18px, 700, 2, 0.06em);
     color: var(--title-color);
 }
 
-.project-type {
+.project-content__type {
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--contacts-list-color);
@@ -55,12 +48,9 @@
     overflow: hidden;
 }
 
-.portfolio-top-text {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.project-list-img-wrapper__overlay {
+    @extend %absolute;
+    @include sizes (100%, 100%);
     font-size: 18px;
     line-height: 1.56;
     letter-spacing: 0.03em;
@@ -70,9 +60,8 @@
     overflow: auto;
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.project-item:hover .portfolio-top-text,
-.project-item:focus .portfolio-top-text {
-    transform: translateY(0%);
+&:hover .project-list-img-wrapper__overlay,
+&:focus .project-list-img-wrapper__overlay {
+        transform: translateY(0%);
+    }
 }
