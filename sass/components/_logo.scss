@@ -13,10 +13,10 @@
 
 }
 .logo-web {
-    color: var(--accent-color);
+    color: $accent-color;
 }
 .logo-studio {
-    color: var(--secondary-color);
+    color: $secondary-color;
 }
 .footer-logo {
     @include font (26px, 700, 1.2, 0.03em);
@@ -25,9 +25,9 @@
 }
 
 .footer-web {
-    color: var(--accent-color);
+    color: $accent-color;
 }
 
 .footer-studio {
-    color: var(--primary-color);
+    color: $primary-color;
 }

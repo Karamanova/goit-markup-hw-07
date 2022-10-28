@@ -6,13 +6,13 @@
     align-items: center;
 }
 .navigation-list .navigation-list__link-current {
-    color: var(--accent-color);
+    color: $accent-color;
 }
 .navigation-list__item a {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    color: var(--title-color);
+    color: $title-color;
     text-decoration: none;
     display: block;
     padding: 32px 0;
@@ -28,7 +28,7 @@
     content: '';
     display: block;
     border-radius: 2px;
-    background-color: var(--accent-color);
+    background-color: $accent-color;
 }
 .navigation-list a:hover,
 .navigation-list a:focus,
@@ -36,5 +36,5 @@
 .contact-detail a:focus,
 .contacts-list a:hover,
 .contacts-list a:focus {
-    color: var(--accent-color);
+    color: $accent-color;
 }

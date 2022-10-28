@@ -3,14 +3,14 @@
 }
 .testionials.item {
     @include font (14px, 400, 1.71, 0.03em);
-    color: var(--contacts-list-color);
+    color: $contacts-list-color;
     align-items: center;
 }
 .testimonials-list__item:not(:last-child) {
     margin-right: 30px;
 }
 .block-testimonials {
-    background-color: var(--about-team-background-color);
+    background-color: $about-team-background-color;
     @extend %flex;
     height: 120px;
     margin-bottom: 30px;
@@ -22,13 +22,13 @@
 .testimonials-list__text {
     @include font (14px, 700, 1.14, 0.03em);
     text-transform: uppercase;
-    color: var(--title-color);
+    color: $title-color;
     margin: 0 0 10px 0;
 }
 .testimonials-list__description {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--contacts-list-color);
+    color: $contacts-list-color;
     width: 270px;
 }
