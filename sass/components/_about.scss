@@ -1,7 +1,6 @@
-.about-projects {
-    padding: 0 0 94px 0;
+.about {
+    padding-top: 0;
 }
-
 .about__name {
     @include font (36px, 700, 1.16, 0.03em);
     text-align: center;
@@ -16,10 +15,9 @@
 .about-list__item {
     position: relative;
     align-items: center;
-}
-
-.about-list__item:not(:last-child) {
-    margin-right: 30px;
+&:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
 .about-list__direction {

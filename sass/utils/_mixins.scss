@@ -3,7 +3,18 @@
     font-weight: $fw;
     line-height: $lh;
     letter-spacing: $ls;
-    
+}
+
+@mixin half-font($fs, $lh, $ls) {
+    font-size: $fs;
+    line-height: $lh;
+    letter-spacing: $ls;
+}
+
+@mixin wsh ($fs, $fw, $lh) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
 }
 
 @mixin sizes ($w, $h) {

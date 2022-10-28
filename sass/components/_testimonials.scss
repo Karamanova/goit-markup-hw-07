@@ -26,9 +26,7 @@
     margin: 0 0 10px 0;
 }
 .testimonials-list__description {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    @include half-font (14px, 1.71, 0.03em);
     color: $contacts-list-color;
     width: 270px;
 }

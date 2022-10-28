@@ -31,9 +31,7 @@
 }
 
 .contacts-list__item a {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    @include wsh (14px, 500, 1.14);
     color: $contacts-list-color;
     text-decoration: none;
     display: flex;

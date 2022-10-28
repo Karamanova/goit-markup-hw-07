@@ -13,14 +13,14 @@
 %buttons {
     cursor: pointer;
     text-align: center;
+    font-family: inherit;
 }
-%absolute {
-    position: absolute;
-    top: 0;
-    left: 0;
+%half-buttons {
+    cursor: pointer;
+    font-family: inherit;
 }
 
-%absolutebottom {
+%absolute {
     position: absolute;
     top: 0;
     left: 0;
@@ -29,4 +29,8 @@
 %wrap {
     display: flex;
     flex-wrap: wrap;
+}
+
+%transition {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

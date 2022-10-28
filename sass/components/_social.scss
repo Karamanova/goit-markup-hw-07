@@ -3,10 +3,8 @@
 }
 
 .footer-social__title {
-    font-size: 14px;
-    line-height: 1.14;
+    @include half-font (14px, 1.14, 0.03em);
     text-align: left;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $primary-color;
     margin-bottom: 20px;

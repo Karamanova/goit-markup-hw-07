@@ -21,8 +21,7 @@
 }
 .hero-btn {
     @include font (16px, 700, 1.88, 0.06em);
-    cursor: pointer;
-    font-family: inherit;
+    @extend %half-buttons;
     padding: 10px 32px;
     background-color: $hero-button-background-color;
     color: $primary-color;

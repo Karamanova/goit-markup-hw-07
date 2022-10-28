@@ -51,9 +51,7 @@
 .project-list-img-wrapper__overlay {
     @extend %absolute;
     @include sizes (100%, 100%);
-    font-size: 18px;
-    line-height: 1.56;
-    letter-spacing: 0.03em;
+    @include half-font (18px, 1.56, 0.03em);
     color: $primary-color;
     padding: 63px 24px;
     background-color: rgba(33, 150, 243, 0.9);

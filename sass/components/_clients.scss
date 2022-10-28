@@ -1,10 +1,7 @@
 .clients__name {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    @include font (36px, 700, 1.16, 0.03em);
     text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--title-color);
+    color: $title-color;
     margin-bottom: 50px;
 }
 
@@ -13,8 +10,7 @@
 }
 
 .clients-list__item {
-    width: 172px;
-    height: 92px;
+    @include sizes (172px, 92px);
 }
 
 .clients-list__logo {
