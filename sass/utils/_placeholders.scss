@@ -20,6 +20,12 @@
     left: 0;
 }
 
+%absolutebottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 %wrap {
     display: flex;
     flex-wrap: wrap;

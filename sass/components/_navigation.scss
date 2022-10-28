@@ -4,8 +4,12 @@
 .navigation-list {
     display: flex;
     align-items: center;
+& a:hover,
+& a:focus {
+   color: $accent-color;
+    }
 }
-.navigation-list .navigation-list__link-current {
+.navigation-list .link-current {
     color: $accent-color;
 }
 .navigation-list__item a {
@@ -22,19 +26,13 @@
 .navigation-list .navigation-list__item:not(:last-child) {
     margin-right: 50px;
 }
-.navigation-list .navigation-list__link-current::after {
-    @include sizes (100%, 4px);
-    @extend %absolute;
+.navigation-list .link-current::after {
     content: '';
     display: block;
+    @include sizes (100%, 4px);
+    position: absolute;
+    bottom: 0;
+    left: 0;
     border-radius: 2px;
     background-color: $accent-color;
-}
-.navigation-list a:hover,
-.navigation-list a:focus,
-.contact-detail a:hover,
-.contact-detail a:focus,
-.contacts-list a:hover,
-.contacts-list a:focus {
-    color: $accent-color;
 }
