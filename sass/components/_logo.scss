@@ -18,7 +18,7 @@
 .logo-studio {
     color: $secondary-color;
 }
-.footer-logo {
+.footer__logo {
     @include font (26px, 700, 1.2, 0.03em);
     font-family: Raleway;
     text-decoration: none;

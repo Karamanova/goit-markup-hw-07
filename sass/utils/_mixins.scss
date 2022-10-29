@@ -5,7 +5,7 @@
     letter-spacing: $ls;
 }
 
-@mixin half-font($fs, $lh, $ls) {
+@mixin halffont($fs, $lh, $ls) {
     font-size: $fs;
     line-height: $lh;
     letter-spacing: $ls;

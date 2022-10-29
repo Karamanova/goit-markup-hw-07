@@ -5,15 +5,15 @@
     margin-bottom: 50px;
 }
 
-.clients-list {
+.clients__list {
     display: flex;
 }
 
-.clients-list__item {
+.clients__item {
     @include sizes (172px, 92px);
 }
 
-.clients-list__logo {
+.clients__logo {
     @extend %flex;
     @include sizes (100%, 100%);
     border: 1px solid $our-clients-logo-color;
@@ -30,11 +30,11 @@
     }
 }
 
-.clients-list__item:not(:last-child) {
+.clients__item:not(:last-child) {
     margin-right: 30px;
 }
 
-.clients-list__icon {
+.clients__icon {
     fill: currentColor;
 &:hover,
 &:focus {

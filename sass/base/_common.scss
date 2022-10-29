@@ -1,7 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: var(--primary-color);
-    color: var(--title-color);
+    background-color: $primary-color;
+    color: $title-color;
 }
 .list {
     list-style: none;
@@ -27,6 +27,7 @@ img {
 .section {
     padding: 94px 0;
 }
+
 .container {
     width: 1200px;
     padding: 0 15px;
@@ -35,7 +36,8 @@ img {
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
-    @include sizes (1px, 1px);
+    width: 1px;
+    height: 1px;
     overflow: hidden;
     border: 0;
     padding: 0;
@@ -44,5 +46,5 @@ img {
     margin: -1px;
 }
 .current {
-    color: var(--accent-color);
+    color: $accent-color;
 }

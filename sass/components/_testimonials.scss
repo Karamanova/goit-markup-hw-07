@@ -1,4 +1,7 @@
-.testimonials-list {
+.testimonials {
+    padding-top: 94px;
+}
+.testimonials__list {
     display: flex;
 }
 .testionials.item {
@@ -6,27 +9,27 @@
     color: $contacts-list-color;
     align-items: center;
 }
-.testimonials-list__item:not(:last-child) {
+.testimonials__item:not(:last-child) {
     margin-right: 30px;
 }
-.block-testimonials {
+.testimonials__block {
     background-color: $about-team-background-color;
     @extend %flex;
     height: 120px;
     margin-bottom: 30px;
     border-radius: 4px;
 }
-.block-testimonials__icons {
+.testimonials__icons {
     align-items: center;
 }
-.testimonials-list__text {
+.testimonials__text {
     @include font (14px, 700, 1.14, 0.03em);
     text-transform: uppercase;
     color: $title-color;
     margin: 0 0 10px 0;
 }
-.testimonials-list__description {
-    @include half-font (14px, 1.71, 0.03em);
+.testimonials__description {
+    @include halffont (14px, 1.71, 0.03em);
     color: $contacts-list-color;
     width: 270px;
 }

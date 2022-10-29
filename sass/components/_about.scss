@@ -1,6 +1,3 @@
-.about {
-    padding-top: 0;
-}
 .about__name {
     @include font (36px, 700, 1.16, 0.03em);
     text-align: center;
@@ -8,11 +5,11 @@
     margin-bottom: 50px;
 }
 
-.about-list {
+.about__list {
     display: flex;
 }
 
-.about-list__item {
+.about__item {
     position: relative;
     align-items: center;
 &:not(:last-child) {
@@ -20,7 +17,7 @@
     }
 }
 
-.about-list__direction {
+.about__direction {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -31,7 +28,7 @@
     bottom: 0;
 }
 
-.about-list__direction-text {
+.about__text {
     color: $primary-color;
     @include font (14px, 700, 1.14, 0.03em);
     text-transform: uppercase;

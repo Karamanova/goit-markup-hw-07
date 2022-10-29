@@ -3,33 +3,33 @@
 }
 
 .footer-social__title {
-    @include half-font (14px, 1.14, 0.03em);
+    @include halffont (14px, 1.14, 0.03em);
     text-align: left;
     text-transform: uppercase;
     color: $primary-color;
     margin-bottom: 20px;
 }
 
-.footer-social-list {
+.footer-social__list {
     display: flex;
     padding: 0;
 }
 
-.footer-social-list__item {
+.footer-social__item {
     @include sizes (44px, 44px);
 &:not(:last-child) {
     margin-right: 10px;
     }
 }
 
-.footer-social-list__icon {
+.footer-social__icon {
     fill: currentColor;
 }
 
 .social-icon {
     fill: currentColor;
 }
-.footer-social-list__link {
+.footer-social__link {
     @extend %flex;
     @include sizes (100%, 100%);
     color: $primary-color;
